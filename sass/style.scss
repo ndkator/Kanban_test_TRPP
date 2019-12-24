@@ -1,0 +1,142 @@
+$column-background: #F0F1F6;
+$add-btn-background: #49D830;
+$add-btn-background-hover: rgb(68, 204, 44);
+$remove-btn-background: #FE3C54;
+$remove-btn-background-hover: rgb(231, 56, 76);
+$icons-light-blue: #63E6BE;
+$add-btn-orange: #FFAE2B;
+$column-header: #3C51C6;
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	background: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.column-container{
+	padding: 16px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.col-parent {
+	display: inline-block;
+	width: 20%;
+	margin-right: 60px;
+}
+
+.column {
+	background: $column-background;
+	width: 100%;
+	border-radius: 15px;
+	padding: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	.column-title{
+		color: $column-header;
+		display: inline-block;
+		padding: 0 12px;
+		margin: 0;
+	}
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0; 
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+}
+
+.card {
+	position: relative;
+	display: block;
+	border-radius: 15px;
+	padding:12px;
+	background: white;
+	color: #5f5454;
+	margin-top: 16px;
+	.info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span {
+			i {
+				margin-right: 10px;
+			}
+		}
+		.avatar-small{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+	}
+	
+}
+.btn-round {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border: none;
+	font-size: 16px;
+	border-radius: 50%;
+	font-weight: 300;
+	color: white;
+}
+.red {
+	background: $remove-btn-background;
+	&:hover {
+		background-color: $remove-btn-background-hover;
+	}
+}
+
+.red2 {
+	background: white;
+	color: rgb(131, 131, 131);
+	&:hover {
+		background-color: $remove-btn-background;
+		color: white;
+	}
+}
+.green {
+	background: $add-btn-background;
+	&:hover {
+		background-color: $add-btn-background-hover;
+	}
+}
+
+.corner {
+	position: absolute;
+	right: -7px;
+	top: -7px;
+}
+
+.column-btns {
+	
+	float: right;
+}
+
+.top-header {
+	background: white;
+	color: $column-header;
+	padding: 16px;
+	button{
+		padding: 12px;
+		background: $add-btn-orange;
+		color: white;
+		border: 0;
+		border-radius: 15px;
+		font-size: 12px;
+		i {
+			margin-right: 10px;
+		}
+	}
+}

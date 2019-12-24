@@ -1,0 +1,112 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0; }
+
+.column-container {
+  padding: 16px;
+  display: flex;
+  align-items: flex-start; }
+
+.col-parent {
+  display: inline-block;
+  width: 20%;
+  margin-right: 60px; }
+
+.column {
+  background: #F0F1F6;
+  width: 100%;
+  border-radius: 15px;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+  .column .column-title {
+    color: #3C51C6;
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0; }
+  .column hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; }
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+    min-height: 100px; }
+
+.card {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  padding: 12px;
+  background: white;
+  color: #5f5454;
+  margin-top: 16px; }
+  .card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card .info span i {
+      margin-right: 10px; }
+    .card .info .avatar-small {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+
+.btn-round {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-size: 16px;
+  border-radius: 50%;
+  font-weight: 300;
+  color: white; }
+
+.red {
+  background: #FE3C54; }
+  .red:hover {
+    background-color: #e7384c; }
+
+.red2 {
+  background: white;
+  color: #838383; }
+  .red2:hover {
+    background-color: #FE3C54;
+    color: white; }
+
+.green {
+  background: #49D830; }
+  .green:hover {
+    background-color: #44cc2c; }
+
+.corner {
+  position: absolute;
+  right: -7px;
+  top: -7px; }
+
+.column-btns {
+  float: right; }
+
+.top-header {
+  background: white;
+  color: #3C51C6;
+  padding: 16px; }
+  .top-header button {
+    padding: 12px;
+    background: #FFAE2B;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 12px; }
+    .top-header button i {
+      margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */

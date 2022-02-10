@@ -22,7 +22,7 @@
   "dependencies": {
     "browser-sync": "^2.26.3",
     "globstar": "^1.0.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
